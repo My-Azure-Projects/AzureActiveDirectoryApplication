@@ -1,0 +1,32 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.vidolima'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+	jcenter()
+	jcenter{
+		url 'http://oss.jfrog.org/artifactory/oss-snapshot-local'
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+
+	compile('com.microsoft.graph:microsoft-graph:1.8.+')
+	compile('com.microsoft.graph:microsoft-graph-auth:0.2.0-SNAPSHOT')
+
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
