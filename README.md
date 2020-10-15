@@ -5,6 +5,7 @@ This is a simple authentication demo that uses Azure Active Directory B2C to aut
 
 ## Authentication Flow
 
+
 <img src="./.github/assets/authentication-flow.png" alt="Authentication Flow" />
 
 ## Single Page Aplication
