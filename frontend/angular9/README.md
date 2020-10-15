@@ -10,6 +10,7 @@ description: "An Azure AD B2C single-page application calling a web api using MS
 urlFragment: "active-directory-b2c-javascript-angular-spa"
 ---
 
+
 # Single-Page Application built on MSAL.js with Azure AD B2C
 
 > **Warning**: Silent renewing of access tokens is not supported by all social identity providers.
